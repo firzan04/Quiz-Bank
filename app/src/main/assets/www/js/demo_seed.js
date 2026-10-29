@@ -1,0 +1,328 @@
+/* Curated demo content (same seed as the desktop app). */
+(function (g) {
+  'use strict';
+  var QB = (g.QB = g.QB || {});
+  QB.demoSeed = {
+ "description": "Curated demo content for the BIG 4 Quantitative Assessment Engine.",
+ "sheets": {
+  "Financial_Accounting": [
+   {
+    "Nomor": "1",
+    "Soal": "Which financial statement reports a company's financial position **at a specific point in time**?",
+    "Pilihan A": "Income statement",
+    "Pembahasan jika Pilihan A": "The income statement measures performance **over a period** (revenue less expenses), not position at a date.",
+    "Pilihan B": "Balance sheet",
+    "Pembahasan jika Pilihan B": "Correct. The balance sheet (statement of financial position) lists assets, liabilities and equity as at the reporting date.",
+    "Pilihan C": "Statement of cash flows",
+    "Pembahasan jika Pilihan C": "The cash flow statement explains cash movements **during** a period across operating, investing and financing activities.",
+    "Pilihan D": "Statement of changes in equity",
+    "Pembahasan jika Pilihan D": "This statement reconciles opening and closing equity over a period; it does not present total assets and liabilities.",
+    "Jawaban Benar": "Balance sheet"
+   },
+   {
+    "Nomor": "2",
+    "Soal": "Under the accrual basis (IFRS 15), revenue is recognised when:",
+    "Pilihan A": "Cash is received from the customer",
+    "Pembahasan jika Pilihan A": "Cash timing is irrelevant under accrual accounting — that describes the cash basis.",
+    "Pilihan B": "A performance obligation is satisfied",
+    "Pembahasan jika Pilihan B": "Correct. Revenue is recognised when (or as) control of the promised goods or services transfers, i.e. the performance obligation is satisfied.",
+    "Pilihan C": "The invoice is issued",
+    "Pembahasan jika Pilihan C": "Invoicing is an administrative event; revenue can be earned before or after an invoice is raised.",
+    "Pilihan D": "The contract is signed",
+    "Pembahasan jika Pilihan D": "Signing creates rights and obligations, but nothing has been delivered yet, so no revenue is earned.",
+    "Jawaban Benar": "A performance obligation is satisfied"
+   },
+   {
+    "Nomor": "3",
+    "Soal": "Equipment costs **120,000**, has a residual value of **20,000** and a useful life of **5 years**. What is the annual straight-line depreciation?",
+    "Pilihan A": "24,000",
+    "Pembahasan jika Pilihan A": "120,000 ÷ 5 ignores the residual value; only the depreciable amount (cost − residual) is spread over the life.",
+    "Pilihan B": "20,000",
+    "Pembahasan jika Pilihan B": "Correct. (120,000 − 20,000) ÷ 5 = 20,000 per year.",
+    "Pilihan C": "28,000",
+    "Pembahasan jika Pilihan C": "This adds the residual value to cost (140,000 ÷ 5). Residual value must be **deducted**.",
+    "Pilihan D": "16,000",
+    "Pembahasan jika Pilihan D": "This divides 80,000 by 5 — the depreciable amount is 100,000, not 80,000.",
+    "Jawaban Benar": "20,000"
+   },
+   {
+    "Nomor": "4",
+    "Soal": "Which of the following is classified as a **current liability**?",
+    "Pilihan A": "Bonds payable due in 10 years",
+    "Pembahasan jika Pilihan A": "Bonds due in 10 years are non-current; only the portion due within 12 months would be current.",
+    "Pilihan B": "Accounts payable",
+    "Pembahasan jika Pilihan B": "Correct. Trade payables are normally settled within the operating cycle or 12 months, so they are current liabilities.",
+    "Pilihan C": "Goodwill",
+    "Pembahasan jika Pilihan C": "Goodwill is an intangible **asset**, not a liability.",
+    "Pilihan D": "Retained earnings",
+    "Pembahasan jika Pilihan D": "Retained earnings form part of **equity**, not liabilities.",
+    "Jawaban Benar": "Accounts payable"
+   },
+   {
+    "Nomor": "5",
+    "Soal": "The accounting equation is:",
+    "Pilihan A": "Assets = Liabilities − Equity",
+    "Pembahasan jika Pilihan A": "Equity is a residual claim that **adds** to liabilities in funding assets; it is not subtracted.",
+    "Pilihan B": "Assets = Liabilities + Equity",
+    "Pembahasan jika Pilihan B": "Correct. Every asset is financed either by creditors (liabilities) or owners (equity).",
+    "Pilihan C": "Assets = Revenue − Expenses",
+    "Pembahasan jika Pilihan C": "Revenue − Expenses is profit, which flows into equity but is not the full equation.",
+    "Pilihan D": "Assets = Equity − Liabilities",
+    "Pembahasan jika Pilihan D": "This reverses the relationship; liabilities increase, not decrease, the claims on assets.",
+    "Jawaban Benar": "Assets = Liabilities + Equity"
+   },
+   {
+    "Nomor": "6",
+    "Soal": "The **current ratio** is calculated as:",
+    "Pilihan A": "Current assets ÷ Current liabilities",
+    "Pembahasan jika Pilihan A": "Correct. The current ratio compares short-term resources with short-term obligations.",
+    "Pilihan B": "(Current assets − Inventory) ÷ Current liabilities",
+    "Pembahasan jika Pilihan B": "This is the quick (acid-test) ratio, which excludes less liquid inventory.",
+    "Pilihan C": "Total liabilities ÷ Total equity",
+    "Pembahasan jika Pilihan C": "This is the debt-to-equity ratio, a solvency (leverage) measure.",
+    "Pilihan D": "Net income ÷ Revenue",
+    "Pembahasan jika Pilihan D": "This is net profit margin, a profitability measure.",
+    "Jawaban Benar": "Current assets ÷ Current liabilities"
+   },
+   {
+    "Nomor": "7",
+    "Soal": "A 12-month insurance premium paid in advance is **initially** recorded as:",
+    "Pilihan A": "An expense",
+    "Pembahasan jika Pilihan A": "The benefit has not been consumed yet; the expense is recognised gradually as cover is used.",
+    "Pilihan B": "An asset (prepaid expense)",
+    "Pembahasan jika Pilihan B": "Correct. The prepayment is an asset that is released to expense over the 12-month cover period.",
+    "Pilihan C": "A liability",
+    "Pembahasan jika Pilihan C": "A liability would arise if the company **received** cash in advance, not paid it.",
+    "Pilihan D": "Revenue",
+    "Pembahasan jika Pilihan D": "Paying a premium is an outflow; it can never be revenue for the payer.",
+    "Jawaban Benar": "An asset (prepaid expense)"
+   },
+   {
+    "Nomor": "8",
+    "Soal": "When prices are **rising**, which inventory cost formula produces the **highest** cost of goods sold (where permitted, e.g. US GAAP)?",
+    "Pilihan A": "FIFO",
+    "Pembahasan jika Pilihan A": "FIFO expenses the oldest (cheapest) costs first, giving the **lowest** COGS in inflation.",
+    "Pilihan B": "Weighted average",
+    "Pembahasan jika Pilihan B": "Weighted average sits between FIFO and LIFO, so it is not the highest.",
+    "Pilihan C": "LIFO",
+    "Pembahasan jika Pilihan C": "Correct. LIFO expenses the most recent (most expensive) purchases first. Note IFRS prohibits LIFO.",
+    "Pilihan D": "They all produce the same COGS",
+    "Pembahasan jika Pilihan D": "Cost formulas diverge whenever purchase prices change, so the results differ.",
+    "Jawaban Benar": "LIFO"
+   }
+  ],
+  "Statistics_Fundamentals": [
+   {
+    "Nomor": "1",
+    "Soal": "For the sample $x = \\{2, 4, 4, 4, 5, 5, 7, 9\\}$, what is the mean $\\bar{x}$?",
+    "Pilihan A": "4",
+    "Pembahasan jika Pilihan A": "4 is the **mode** (most frequent value), not the mean.",
+    "Pilihan B": "5",
+    "Pembahasan jika Pilihan B": "Correct. $\\bar{x} = \\frac{\\sum x_i}{n} = \\frac{40}{8} = 5$.",
+    "Pilihan C": "4.5",
+    "Pembahasan jika Pilihan C": "4.5 is the **median** of the sorted data (average of 4 and 5), not the mean.",
+    "Pilihan D": "6",
+    "Pembahasan jika Pilihan D": "6 would require a total of 48; the observations sum to 40.",
+    "Jawaban Benar": "5"
+   },
+   {
+    "Nomor": "2",
+    "Soal": "What is the median of $\\{3, 7, 1, 9, 5\\}$?",
+    "Pilihan A": "5",
+    "Pembahasan jika Pilihan A": "Correct. Sorted: 1, 3, **5**, 7, 9 — the middle (3rd) value is 5.",
+    "Pilihan B": "7",
+    "Pembahasan jika Pilihan B": "7 is the 4th value after sorting; the median is the middle (3rd) one.",
+    "Pilihan C": "3",
+    "Pembahasan jika Pilihan C": "3 is the 2nd value after sorting.",
+    "Pilihan D": "6",
+    "Pembahasan jika Pilihan D": "6 is the average of 5 and 7, which applies only to an even number of observations.",
+    "Jawaban Benar": "5"
+   },
+   {
+    "Nomor": "3",
+    "Soal": "Which measure of central tendency is **most robust to outliers**?",
+    "Pilihan A": "Mean",
+    "Pembahasan jika Pilihan A": "The mean uses every value's magnitude, so a single extreme value can shift it substantially.",
+    "Pilihan B": "Median",
+    "Pembahasan jika Pilihan B": "Correct. The median depends only on rank order, so extreme values barely move it.",
+    "Pilihan C": "Range",
+    "Pembahasan jika Pilihan C": "Range is a measure of dispersion and is determined **entirely** by the extremes.",
+    "Pilihan D": "Standard deviation",
+    "Pembahasan jika Pilihan D": "Standard deviation is a dispersion measure and is highly sensitive to outliers.",
+    "Jawaban Benar": "Median"
+   },
+   {
+    "Nomor": "4",
+    "Soal": "If $Z \\sim \\mathcal{N}(0, 1)$, approximately what share of observations lies within $\\pm 1\\sigma$ of the mean?",
+    "Pilihan A": "50%",
+    "Pembahasan jika Pilihan A": "50% lies within roughly $\\pm 0.674\\sigma$ (the interquartile range), not $\\pm 1\\sigma$.",
+    "Pilihan B": "68%",
+    "Pembahasan jika Pilihan B": "Correct. The empirical rule: about 68% within $\\pm1\\sigma$, 95% within $\\pm2\\sigma$, 99.7% within $\\pm3\\sigma$.",
+    "Pilihan C": "95%",
+    "Pembahasan jika Pilihan C": "95% corresponds to about $\\pm 2\\sigma$ (more precisely $\\pm 1.96\\sigma$).",
+    "Pilihan D": "99.7%",
+    "Pembahasan jika Pilihan D": "99.7% corresponds to $\\pm 3\\sigma$.",
+    "Jawaban Benar": "68%"
+   },
+   {
+    "Nomor": "5",
+    "Soal": "If the standard deviation is $\\sigma = 4$, the variance $\\sigma^2$ is:",
+    "Pilihan A": "2",
+    "Pembahasan jika Pilihan A": "2 is the square **root** of 4; variance is the square of the standard deviation.",
+    "Pilihan B": "8",
+    "Pembahasan jika Pilihan B": "8 doubles σ instead of squaring it.",
+    "Pilihan C": "16",
+    "Pembahasan jika Pilihan C": "Correct. $\\sigma^2 = 4^2 = 16$.",
+    "Pilihan D": "4",
+    "Pembahasan jika Pilihan D": "Variance equals σ only when σ = 1 (or 0).",
+    "Jawaban Benar": "16"
+   },
+   {
+    "Nomor": "6",
+    "Soal": "A test yields $p = 0.03$ at significance level $\\alpha = 0.05$. The correct conclusion is:",
+    "Pilihan A": "Fail to reject $H_0$",
+    "Pembahasan jika Pilihan A": "Since $p < \\alpha$, the evidence is strong enough to reject $H_0$.",
+    "Pilihan B": "Reject $H_0$",
+    "Pembahasan jika Pilihan B": "Correct. $p = 0.03 < \\alpha = 0.05$, so we reject the null hypothesis.",
+    "Pilihan C": "$H_0$ is true with probability 0.03",
+    "Pembahasan jika Pilihan C": "A p-value is $P(\\text{data this extreme} \\mid H_0)$, not the probability that $H_0$ is true.",
+    "Pilihan D": "The effect size is large",
+    "Pembahasan jika Pilihan D": "Statistical significance says nothing about magnitude; effect size must be measured separately.",
+    "Jawaban Benar": "Reject $H_0$"
+   },
+   {
+    "Nomor": "7",
+    "Soal": "A Pearson correlation of $r = -0.9$ indicates:",
+    "Pilihan A": "A weak negative relationship",
+    "Pembahasan jika Pilihan A": "|r| = 0.9 is close to 1, which is **strong**, not weak.",
+    "Pilihan B": "A strong negative linear relationship",
+    "Pembahasan jika Pilihan B": "Correct. The sign gives the direction (negative) and |r| near 1 gives the strength of the linear association.",
+    "Pilihan C": "No relationship",
+    "Pembahasan jika Pilihan C": "No linear relationship would give r close to 0.",
+    "Pilihan D": "A strong positive relationship",
+    "Pembahasan jika Pilihan D": "A negative sign means that as one variable rises the other falls.",
+    "Jawaban Benar": "A strong negative linear relationship"
+   },
+   {
+    "Nomor": "8",
+    "Soal": "A **Type I error** occurs when you:",
+    "Pilihan A": "Reject a true null hypothesis",
+    "Pembahasan jika Pilihan A": "Correct. A Type I error is a false positive; its probability is α.",
+    "Pilihan B": "Fail to reject a false null hypothesis",
+    "Pembahasan jika Pilihan B": "This is a Type II error (false negative), with probability β.",
+    "Pilihan C": "Use a biased sample",
+    "Pembahasan jika Pilihan C": "Sampling bias is a design flaw, not a Type I/II error classification.",
+    "Pilihan D": "Choose the wrong statistical test",
+    "Pembahasan jika Pilihan D": "Using the wrong test can cause errors but is not the definition of a Type I error.",
+    "Jawaban Benar": "Reject a true null hypothesis"
+   }
+  ],
+  "Audit_Assurance": [
+   {
+    "Nomor": "1",
+    "Soal": "The primary objective of an external financial statement audit is to:",
+    "Pilihan A": "Detect all fraud and error",
+    "Pembahasan jika Pilihan A": "Audits provide **reasonable**, not absolute, assurance; detecting all fraud is impossible.",
+    "Pilihan B": "Express an opinion on whether the financial statements are fairly presented",
+    "Pembahasan jika Pilihan B": "Correct. The auditor expresses an opinion on whether the statements are free from material misstatement and fairly presented.",
+    "Pilihan C": "Prepare the financial statements",
+    "Pembahasan jika Pilihan C": "Preparation is management's responsibility; auditors must remain independent of it.",
+    "Pilihan D": "Guarantee the entity is a going concern",
+    "Pembahasan jika Pilihan D": "An audit does not guarantee future viability of the entity.",
+    "Jawaban Benar": "Express an opinion on whether the financial statements are fairly presented"
+   },
+   {
+    "Nomor": "2",
+    "Soal": "The audit risk model is expressed as:",
+    "Pilihan A": "AR = IR × CR × DR",
+    "Pembahasan jika Pilihan A": "Correct. Audit risk = inherent risk × control risk × detection risk.",
+    "Pilihan B": "AR = IR + CR + DR",
+    "Pembahasan jika Pilihan B": "The components are multiplicative probabilities, not additive.",
+    "Pilihan C": "AR = IR × CR ÷ DR",
+    "Pembahasan jika Pilihan C": "Detection risk multiplies, it does not divide, the risk of material misstatement.",
+    "Pilihan D": "AR = Materiality × DR",
+    "Pembahasan jika Pilihan D": "Materiality is a threshold, not a component of the audit risk model.",
+    "Jawaban Benar": "AR = IR × CR × DR"
+   },
+   {
+    "Nomor": "3",
+    "Soal": "**Vouching** (selecting entries in the ledger and inspecting supporting documents) primarily tests which assertion?",
+    "Pilihan A": "Completeness",
+    "Pembahasan jika Pilihan A": "Completeness is tested by **tracing** from source documents into the records (the opposite direction).",
+    "Pilihan B": "Occurrence / existence",
+    "Pembahasan jika Pilihan B": "Correct. Starting from recorded entries and seeking evidence shows that recorded transactions actually occurred.",
+    "Pilihan C": "Cut-off",
+    "Pembahasan jika Pilihan C": "Cut-off focuses on recording transactions in the correct period, typically around period end.",
+    "Pilihan D": "Classification",
+    "Pembahasan jika Pilihan D": "Classification concerns recording in the proper accounts, not whether the transaction happened.",
+    "Jawaban Benar": "Occurrence / existence"
+   },
+   {
+    "Nomor": "4",
+    "Soal": "When control risk is assessed as **high**, the auditor should:",
+    "Pilihan A": "Reduce substantive testing",
+    "Pembahasan jika Pilihan A": "Lower substantive testing would raise detection risk while controls are weak — audit risk would be too high.",
+    "Pilihan B": "Increase substantive testing",
+    "Pembahasan jika Pilihan B": "Correct. Higher control risk requires lower detection risk, achieved through more extensive substantive procedures.",
+    "Pilihan C": "Issue an adverse opinion",
+    "Pembahasan jika Pilihan C": "Weak controls alone do not mean the statements are materially misstated.",
+    "Pilihan D": "Place more reliance on controls",
+    "Pembahasan jika Pilihan D": "A high control-risk assessment means controls **cannot** be relied upon.",
+    "Jawaban Benar": "Increase substantive testing"
+   },
+   {
+    "Nomor": "5",
+    "Soal": "An **unmodified** audit opinion means the financial statements:",
+    "Pilihan A": "Are free from all errors",
+    "Pembahasan jika Pilihan A": "Immaterial errors may still exist; assurance is reasonable, not absolute.",
+    "Pilihan B": "Are presented fairly in all material respects",
+    "Pembahasan jika Pilihan B": "Correct. An unmodified (clean) opinion states fair presentation in all material respects under the framework.",
+    "Pilihan C": "Show the company is profitable",
+    "Pembahasan jika Pilihan C": "Profitability is irrelevant to the opinion — a loss-making entity can receive a clean opinion.",
+    "Pilihan D": "Have no internal control weaknesses",
+    "Pembahasan jika Pilihan D": "The opinion is on the financial statements; control deficiencies may still exist.",
+    "Jawaban Benar": "Are presented fairly in all material respects"
+   },
+   {
+    "Nomor": "6",
+    "Soal": "**Professional scepticism** is best described as:",
+    "Pilihan A": "Assuming management is dishonest",
+    "Pembahasan jika Pilihan A": "Scepticism is neutral — it neither assumes dishonesty nor unquestioned honesty.",
+    "Pilihan B": "A questioning mind and critical assessment of audit evidence",
+    "Pembahasan jika Pilihan B": "Correct. It means staying alert to contradictory evidence and critically evaluating what is obtained.",
+    "Pilihan C": "Accepting management representations at face value",
+    "Pembahasan jika Pilihan C": "Representations are a weak form of evidence and must be corroborated.",
+    "Pilihan D": "Avoiding professional judgement",
+    "Pembahasan jika Pilihan D": "Scepticism complements, rather than replaces, professional judgement.",
+    "Jawaban Benar": "A questioning mind and critical assessment of audit evidence"
+   },
+   {
+    "Nomor": "7",
+    "Soal": "Materiality is primarily judged by whether a misstatement:",
+    "Pilihan A": "Exceeds an absolute amount set by law",
+    "Pembahasan jika Pilihan A": "There is no single statutory amount; benchmarks are set using professional judgement.",
+    "Pilihan B": "Could reasonably influence users' economic decisions",
+    "Pembahasan jika Pilihan B": "Correct. Information is material if omitting or misstating it could influence the decisions of users.",
+    "Pilihan C": "Exceeds the audit fee",
+    "Pembahasan jika Pilihan C": "The audit fee has no bearing on what users consider important.",
+    "Pilihan D": "Affects many transactions",
+    "Pembahasan jika Pilihan D": "Volume of transactions does not determine materiality; magnitude and nature do.",
+    "Jawaban Benar": "Could reasonably influence users' economic decisions"
+   },
+   {
+    "Nomor": "8",
+    "Soal": "Which audit evidence is generally the **most reliable**?",
+    "Pilihan A": "Oral representation from management",
+    "Pembahasan jika Pilihan A": "Oral evidence is the least reliable and needs corroboration.",
+    "Pilihan B": "Internally generated documents",
+    "Pembahasan jika Pilihan B": "Internal documents are more susceptible to manipulation than external evidence.",
+    "Pilihan C": "Confirmation sent directly to the auditor by a third party",
+    "Pembahasan jika Pilihan C": "Correct. External evidence obtained directly by the auditor is more reliable than evidence from the entity.",
+    "Pilihan D": "Photocopies provided by the client",
+    "Pembahasan jika Pilihan D": "Copies are less reliable than originals and come via the client.",
+    "Jawaban Benar": "Confirmation sent directly to the auditor by a third party"
+   }
+  ]
+ }
+};
+})(typeof window !== 'undefined' ? window : globalThis);

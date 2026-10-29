@@ -3,8 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0B0F19">
 <title>Quiz Bank</title>
-<style>body{margin:0;background:#0B0F19;color:#F1F5F9;font-family:system-ui,sans-serif;display:grid;place-items:center;min-height:100vh}</style>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="css/app.css">
 </head>
-<body><main><h1>Quiz Bank</h1><p>Build pipeline test page.</p></main></body>
+<body>
+<header class="topbar" id="qb-nav"></header>
+<main class="main" id="qb-view" aria-busy="true">
+  <div class="boot"><div class="spinner"></div><div>Loading Quiz Bank…</div></div>
+</main>
+<div id="qb-modal"></div>
+<div class="toasts" id="qb-toasts" aria-live="polite"></div>
+<input type="file" id="qb-file-xlsx" class="sr-only" tabindex="-1" aria-hidden="true">
+<input type="file" id="qb-file-json" class="sr-only" tabindex="-1" aria-hidden="true">
+<noscript>Quiz Bank needs JavaScript.</noscript>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/xlsx.js"></script>
+<script src="js/md.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/store.js"></script>
+<script src="js/demo_seed.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/app.js"></script>
+<script>QB.app.start();</script>
+</body>
 </html>
