@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Every CI run gets a higher versionCode so a new APK installs as an update.
+def runNumber = Integer.parseInt(System.getenv("GITHUB_RUN_NUMBER") ?: "1")
+def keystorePassword = System.getenv("KEYSTORE_PASSWORD")
+def hasReleaseKey = keystorePassword != null && !keystorePassword.trim().isEmpty()
+
+android {
+    namespace 'com.firzan.quizbank'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.firzan.quizbank'
+        minSdk 24
+        targetSdk 34
+        versionCode runNumber
+        versionName "1.0.${runNumber}"
+    }
+
+    signingConfigs {
+        release {
+            if (hasReleaseKey) {
+                storeFile file('keystore/quizbank-release.p12')
+                storeType 'pkcs12'
+                storePassword keystorePassword
+                keyAlias 'quizbank'
+                keyPassword keystorePassword
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig hasReleaseKey ? signingConfigs.release : signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}

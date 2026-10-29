@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/qb_void</item>
+        <item name="android:colorBackground">@color/qb_void</item>
+        <item name="android:statusBarColor">@color/qb_void</item>
+        <item name="android:navigationBarColor">@color/qb_void</item>
+        <item name="android:colorPrimary">@color/qb_void</item>
+        <item name="android:colorPrimaryDark">@color/qb_void</item>
+        <item name="android:colorAccent">@color/qb_brand</item>
+    </style>
+</resources>
